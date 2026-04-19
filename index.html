@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OVCAPP — El único software diseñado específicamente para la realidad productiva y reproductiva de ovejas y cabras en Costa Rica." />
+  <meta name="theme-color" content="#1A2B4A" />
+  <title>OVCAPP — Software para hatos de ovejas y cabras en Costa Rica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+    <a href="#inicio" class="nav-logo" aria-label="OVCAPP inicio">OVC<span>APP</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navMenu" role="list">
+      <li><a href="#por-que">¿Por qué?</a></li>
+      <li><a href="#funciones">Funciones</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="https://www.youtube.com/@ovcapp" target="_blank" rel="noopener" class="nav-yt">▶ Tutoriales</a></li>
+      <li class="nav-socials">
+        <a href="https://www.instagram.com/ovcapp" target="_blank" rel="noopener" aria-label="Instagram de OVCAPP" class="nav-social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/ovcapp" target="_blank" rel="noopener" aria-label="Facebook de OVCAPP" class="nav-social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </li>
+      <li><a href="#registro" class="nav-cta">Empezá gratis</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="inicio" aria-label="Presentación">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge" aria-label="Hecho en Costa Rica">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Hecho en Costa Rica 🇨🇷
+      </div>
+
+      <h1>
+        El único software diseñado para la
+        <em>realidad</em> de ovejas y cabras en Costa Rica.
+      </h1>
+
+      <p class="hero-sub">
+        Controlá datos productivos y reproductivos de tu hato desde cualquier dispositivo,
+        con una suscripción mensual sin sorpresas.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#registro" class="btn btn-primary">Empezá gratis →</a>
+        <a href="#funciones" class="btn btn-secondary">Ver funciones</a>
+      </div>
+
+      <div class="hero-stats" aria-label="Estadísticas clave">
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Diseñado para ovinos y caprinos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Mejoras incluidas en tu suscripción</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">CR</span>
+          <span class="stat-label">Desarrollado con productores locales</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard mockup -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="dashboard-card">
+        <div class="dash-header">
+          <span class="dash-title">📋 Mi Hato — Hoy</span>
+          <span class="dash-badge">En vivo</span>
+        </div>
+        <div class="dash-row">
+          <div class="dash-icon">🐑</div>
+          <div class="dash-info">
+            <div class="dash-name">Oveja #A-14 "Lola"</div>
+            <div class="dash-detail">Preñez día 88 · Parto estimado en 14 días</div>
+          </div>
+          <span class="dash-status status-alert">⚠ Próximo parto</span>
+        </div>
+        <div class="dash-row">
+          <div class="dash-icon">🐐</div>
+          <div class="dash-info">
+            <div class="dash-name">Cabra #C-07 "Reina"</div>
+            <div class="dash-detail">Producción: 1.8L hoy · +12% semana</div>
+          </div>
+          <span class="dash-status status-ok">✓ Óptimo</span>
+        </div>
+        <div class="dash-row">
+          <div class="dash-icon">💉</div>
+          <div class="dash-info">
+            <div class="dash-name">Lote B — Vacunación</div>
+            <div class="dash-detail">Brucelosis · Pendiente para el jueves</div>
+          </div>
+          <span class="dash-status status-info">📅 Programado</span>
+        </div>
+        <div class="dash-row">
+          <div class="dash-icon">🐑</div>
+          <div class="dash-info">
+            <div class="dash-name">Oveja #A-22 "Petra"</div>
+            <div class="dash-detail">Celo detectado hoy · Apta para monta</div>
+          </div>
+          <span class="dash-status status-alert">🔔 Alerta</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ QUOTE BAND ══ -->
+  <div class="quote-band" role="complementary" aria-label="Cita destacada">
+    <blockquote class="quote-text">
+      "No lo pensamos para el productor, lo hicimos con él."
+    </blockquote>
+  </div>
+
+  <!-- ══ WHY ══ -->
+  <section class="why section" id="por-que" aria-label="Por qué OVCAPP">
+    <div class="container">
+      <p class="section-label">¿Por qué OVCAPP?</p>
+      <h2 class="section-title reveal">No es un software bovino adaptado.<br />Es uno propio.</h2>
+      <p class="section-sub reveal">
+        Cada variable y cada registro fue pensado para la biología y el
+        negocio de las ovejas y las cabras.
+      </p>
+
+      <div class="why-grid">
+        <article class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🐑</div>
+          <h3 class="why-title">Especializado en rumiantes menores</h3>
+          <p class="why-desc">Las ovejas y cabras tienen ciclos reproductivos y parámetros productivos completamente distintos al ganado bovino. OVCAPP entiende eso.</p>
+        </article>
+        <article class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🔄</div>
+          <h3 class="why-title">Siempre actualizado, sin costo extra</h3>
+          <p class="why-desc">Tu suscripción mensual incluye todas las mejoras y nuevas funciones. No hay versiones nuevas que comprar ni quedarse atrás.</p>
+        </article>
+        <article class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">📊</div>
+          <h3 class="why-title">Pagás según tu hato</h3>
+          <p class="why-desc">El costo depende de la cantidad de animales activos. Empezás con lo que tenés y escalás sin penalizaciones. Simple y justo.</p>
+        </article>
+        <article class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🇨🇷</div>
+          <h3 class="why-title">Hecho con productores costarricenses</h3>
+          <p class="why-desc">OVCAPP nació del trabajo directo con fincas en Costa Rica. Las condiciones locales, las razas y los retos del productor tico están en su ADN.</p>
+        </article>
+        <article class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">📱</div>
+          <h3 class="why-title">Desde el campo, sin complicaciones</h3>
+          <p class="why-desc">Accedé desde el celular, la tableta o la computadora. Registrá en el momento que lo necesitás, donde estés en la finca.</p>
+        </article>
+        <article class="why-card reveal">
+          <div class="why-icon" aria-hidden="true">🔔</div>
+          <h3 class="why-title">Alertas, reportes y análisis <span class="badge-dev">En desarrollo</span></h3>
+          <p class="why-desc">Partos próximos, celos, vacunaciones, destetes y reportes de productividad del hato. Estas funciones están actualmente en desarrollo y llegarán próximamente.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FEATURES ══ -->
+  <section class="features section" id="funciones" aria-label="Funciones del software">
+    <div class="container">
+      <p class="section-label">Funciones</p>
+      <h2 class="section-title reveal">Todo lo que necesitás,<br />en un solo lugar.</h2>
+      <p class="section-sub reveal">
+        Desde el registro individual de cada animal hasta las biotecnologías reproductivas
+        más avanzadas del sector ovino y caprino.
+      </p>
+
+      <div class="features-grid">
+        <ul class="features-list" role="list">
+          <li class="feature-item active reveal" role="listitem" tabindex="0">
+            <div class="feature-dot" aria-hidden="true">🐑</div>
+            <div>
+              <p class="feature-item-title">Ficha individual de cada animal</p>
+              <p class="feature-item-desc">Raza, edad, genealogía, historial de salud, peso y eventos reproductivos. Todo en un solo lugar por animal.</p>
+            </div>
+          </li>
+          <li class="feature-item reveal" role="listitem" tabindex="0">
+            <div class="feature-dot" aria-hidden="true">🧬</div>
+            <div>
+              <p class="feature-item-title">Control reproductivo completo</p>
+              <p class="feature-item-desc">Registro de celos, montas naturales, diagnóstico de preñez, fecha de parto esperada y seguimiento post-parto.</p>
+            </div>
+          </li>
+          <li class="feature-item reveal" role="listitem" tabindex="0">
+            <div class="feature-dot" aria-hidden="true">🔬</div>
+            <div>
+              <p class="feature-item-title">Inseminación artificial</p>
+              <p class="feature-item-desc">Registrá la naturaleza del celo, la técnica de inseminación utilizada, el tipo de semen (fresco, refrigerado o congelado) y todas sus características.</p>
+            </div>
+          </li>
+          <li class="feature-item feature-item--dev reveal" role="listitem" tabindex="0">
+            <div class="feature-dot" aria-hidden="true">🧪</div>
+            <div>
+              <p class="feature-item-title">Donación y trasplante de embriones <span class="badge-dev">En desarrollo</span></p>
+              <p class="feature-item-desc">Registrá la obtención del embrión (in vitro o in vivo) y asignale los datos productivos a su verdadera madre genética, no a la receptora que lo parió. Una madre donante puede tener muchas crías sin inconsistencias en el sistema.</p>
+            </div>
+          </li>
+          <li class="feature-item reveal" role="listitem" tabindex="0">
+            <div class="feature-dot" aria-hidden="true">🥛</div>
+            <div>
+              <p class="feature-item-title">Seguimiento productivo</p>
+              <p class="feature-item-desc">Control de producción de leche por animal y por lote, pesajes y curvas de producción.</p>
+            </div>
+          </li>
+          <li class="feature-item feature-item--dev reveal" role="listitem" tabindex="0">
+            <div class="feature-dot" aria-hidden="true">💉</div>
+            <div>
+              <p class="feature-item-title">Gestión sanitaria <span class="badge-dev">En desarrollo</span></p>
+              <p class="feature-item-desc">Vacunaciones, desparasitaciones y tratamientos veterinarios con historial por animal.</p>
+            </div>
+          </li>
+          <li class="feature-item feature-item--dev reveal" role="listitem" tabindex="0">
+            <div class="feature-dot" aria-hidden="true">📈</div>
+            <div>
+              <p class="feature-item-title">Reportes, alertas y análisis <span class="badge-dev">En desarrollo</span></p>
+              <p class="feature-item-desc">Indicadores de productividad, eficiencia reproductiva, alertas automáticas de eventos críticos y análisis del hato. Próximamente disponibles.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="features-visual reveal" aria-hidden="true">
+          <p class="chart-title">PRODUCCIÓN SEMANAL — CABRAS LOTE A</p>
+          <div class="bars">
+            <div class="bar bar-navy" style="--h:45%"></div>
+            <div class="bar bar-navy" style="--h:55%"></div>
+            <div class="bar bar-orange" style="--h:62%"></div>
+            <div class="bar bar-navy" style="--h:58%"></div>
+            <div class="bar bar-orange" style="--h:72%"></div>
+            <div class="bar bar-navy" style="--h:68%"></div>
+            <div class="bar bar-orange" style="--h:80%"></div>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-box">
+              <div class="metric-val">87%</div>
+              <div class="metric-label">Tasa de parición</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-val">1.8L</div>
+              <div class="metric-label">Leche/animal/día</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-val">42</div>
+              <div class="metric-label">Animales activos</div>
+            </div>
+          </div>
+
+          <!-- Biotech highlight -->
+          <div class="biotech-box">
+            <p class="biotech-label">🔬 Biotecnología reproductiva</p>
+            <div class="biotech-row">
+              <span class="biotech-chip">IA · Inseminación artificial</span>
+              <span class="biotech-chip">Semen fresco</span>
+              <span class="biotech-chip">Semen congelado</span>
+            </div>
+            <div class="biotech-row" style="margin-top:.5rem">
+              <span class="biotech-chip">Embriones in vitro</span>
+              <span class="biotech-chip">Embriones in vivo</span>
+              <span class="biotech-chip">Trazabilidad genética</span>
+            </div>
+          </div>
+
+          <div class="alert-box" style="margin-top:.75rem; opacity:.65;">
+            <span class="alert-icon">🔔</span>
+            <div>
+              <p class="alert-title">Alertas · Próximamente</p>
+              <p class="alert-desc">Partos, celos, vacunaciones y más — en desarrollo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PRICING ══ -->
+  <section class="pricing section" id="planes" aria-label="Planes de precio">
+    <div class="container">
+      <div class="section-center">
+        <p class="section-label">Planes</p>
+        <h2 class="section-title reveal">Planes que crecen con tu finca.</h2>
+        <p class="section-sub reveal">
+          Pagás por los animales activos que tenés. Todos los planes incluyen
+          exactamente las mismas funciones. Sin letra chica, sin sorpresas.
+        </p>
+      </div>
+
+<div class="pricing-grid pricing-grid--5 reveal">
+
+        <article class="price-card">
+          <p class="price-tier">Gratis</p>
+          <p class="price-range">Hasta 5 animales</p>
+          <div class="price-amount">₡0</div>
+          <p class="price-period">sin tarjeta</p>
+          <ul class="price-features" role="list">
+            <li>Registro de fincas ilimitadas</li>
+            <li>Registro, inventario y salida de animales</li>
+            <li>Registro de celos, servicios, partos y diagnóstico de gestación</li>
+            <li>Registro de pesos y condición corporal</li>
+            <li>Producción de leche y secado</li>
+            <li>Acceso desde cualquier dispositivo</li>
+          </ul>
+        </article>
+
+        <article class="price-card">
+          <p class="price-tier">Básico</p>
+          <p class="price-range">6 a 50 animales</p>
+          <div class="price-amount">₡X.XXX</div>
+          <p class="price-period">por mes</p>
+          <ul class="price-features" role="list">
+            <li>Registro de fincas ilimitadas</li>
+            <li>Registro, inventario y salida de animales</li>
+            <li>Registro de celos, servicios, partos y diagnóstico de gestación</li>
+            <li>Registro de pesos y condición corporal</li>
+            <li>Producción de leche y secado</li>
+            <li>Gestión sanitaria</li>
+            <li>Tanque de nitrógeno</li>
+            <li>IA / IATF</li>
+            <li>Módulo de embriones</li>
+            <li>Reportes</li>
+            <li>Notificaciones</li>
+            <li>Acceso desde cualquier dispositivo</li>
+          </ul>
+        </article>
+
+        <article class="price-card price-card--featured">
+          <div class="price-tag">Más popular</div>
+          <p class="price-tier price-tier--featured">Estándar</p>
+          <p class="price-range">51 a 150 animales</p>
+          <div class="price-amount">₡X.XXX</div>
+          <p class="price-period">por mes</p>
+          <ul class="price-features" role="list">
+            <li>Registro de fincas ilimitadas</li>
+            <li>Registro, inventario y salida de animales</li>
+            <li>Registro de celos, servicios, partos y diagnóstico de gestación</li>
+            <li>Registro de pesos y condición corporal</li>
+            <li>Producción de leche y secado</li>
+            <li>Gestión sanitaria</li>
+            <li>Tanque de nitrógeno</li>
+            <li>IA / IATF</li>
+            <li>Módulo de embriones</li>
+            <li>Reportes</li>
+            <li>Notificaciones</li>
+            <li>Acceso desde cualquier dispositivo</li>
+          </ul>
+        </article>
+
+        <article class="price-card">
+          <p class="price-tier">Avanzado</p>
+          <p class="price-range">151 a 500 animales</p>
+          <div class="price-amount">₡X.XXX</div>
+          <p class="price-period">por mes</p>
+          <ul class="price-features" role="list">
+            <li>Registro de fincas ilimitadas</li>
+            <li>Registro, inventario y salida de animales</li>
+            <li>Registro de celos, servicios, partos y diagnóstico de gestación</li>
+            <li>Registro de pesos y condición corporal</li>
+            <li>Producción de leche y secado</li>
+            <li>Gestión sanitaria</li>
+            <li>Tanque de nitrógeno</li>
+            <li>IA / IATF</li>
+            <li>Módulo de embriones</li>
+            <li>Reportes</li>
+            <li>Notificaciones</li>
+            <li>Acceso desde cualquier dispositivo</li>
+          </ul>
+        </article>
+
+        <article class="price-card">
+          <p class="price-tier">Empresarial</p>
+          <p class="price-range">501 a 1000 animales</p>
+          <div class="price-amount">₡X.XXX</div>
+          <p class="price-period">por mes</p>
+          <ul class="price-features" role="list">
+            <li>Registro de fincas ilimitadas</li>
+            <li>Registro, inventario y salida de animales</li>
+            <li>Registro de celos, servicios, partos y diagnóstico de gestación</li>
+            <li>Registro de pesos y condición corporal</li>
+            <li>Producción de leche y secado</li>
+            <li>Gestión sanitaria</li>
+            <li>Tanque de nitrógeno</li>
+            <li>IA / IATF</li>
+            <li>Módulo de embriones</li>
+            <li>Reportes</li>
+            <li>Notificaciones</li>
+            <li>Acceso desde cualquier dispositivo</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <p class="pricing-note reveal">
+        🔐 Los planes se gestionan desde dentro de la plataforma. Registrate gratis y elegí tu plan una vez que estés adentro.<br>
+        <span style="display:block;margin-top:.5rem;">¿Más de 1000 animales? <a href="/cdn-cgi/l/email-protection#2940474f4669465f4a485959074a4644" style="color:var(--orange);font-weight:600;">Contáctenos</a> para una solución personalizada.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ ORIGIN ══ -->
+  <section class="origin section" id="nosotros" aria-label="Nuestra historia">
+    <div class="container">
+      <div class="origin-inner">
+        <p class="section-label">Nuestra historia</p>
+        <h2 class="section-title reveal">Nació en una finca,<br />no en una oficina.</h2>
+        <p class="section-sub reveal">
+          OVCAPP surgió de una necesidad real: los productores de ovejas y cabras
+          en Costa Rica no tenían una herramienta hecha para ellos. Todo era papel,
+          Excel o software bovino que no encajaba.
+        </p>
+        <p class="section-sub reveal">
+          Así que decidimos hacerla desde adentro — con el conocimiento del campo
+          y la tecnología para transformarlo en algo que funciona de verdad.
+          Cada función viene de una conversación real en una finca real.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA FINAL ══ -->
+  <section class="cta-final section" id="registro" aria-label="Registro">
+    <div class="container">
+      <p class="section-label section-label--center">Empezá hoy</p>
+      <h2 class="section-title section-title--center reveal">
+        Tu hato merece más<br />que una hoja de cálculo.
+      </h2>
+      <p class="section-sub section-sub--center reveal">
+        Registrate ahora y sé parte del primer grupo de productores que usa OVCAPP.
+        Precio de lanzamiento especial para los primeros.
+      </p>
+      <div class="cta-final-actions reveal">
+        <a href="#" class="btn btn-primary btn-lg">Quiero registrarme →</a>
+        <a href="/cdn-cgi/l/email-protection#e0898e868fa08f9683819090ce838f8d" class="btn btn-ghost">
+          ✉️ Contáctenos
+        </a>
+        <a href="https://www.youtube.com/@ovcapp" target="_blank" rel="noopener" class="btn btn-ghost">
+          ▶ Ver tutoriales en YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <a href="#inicio" class="nav-logo footer-logo" aria-label="OVCAPP">OVC<span>APP</span></a>
+      <p>© 2026 OVCAPP · <a href="https://www.opcapp.com" style="color:rgba(255,255,255,.5);text-decoration:none;">www.opcapp.com</a> · Software para ovejas y cabras</p>
+      <div class="footer-links">
+        <a href="/cdn-cgi/l/email-protection#ddb4b3bbb29db2abbebcadadf3beb2b0">✉️ <span class="__cf_email__" data-cfemail="8ce5e2eae3cce3faefedfcfca2efe3e1">[email&#160;protected]</span></a>
+        <a href="https://www.youtube.com/@ovcapp" target="_blank" rel="noopener" aria-label="YouTube">▶ YouTube</a>
+        <a href="https://www.instagram.com/ovcapp" target="_blank" rel="noopener" aria-label="Instagram de OVCAPP" class="footer-social">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/ovcapp" target="_blank" rel="noopener" aria-label="Facebook de OVCAPP" class="footer-social">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-l
