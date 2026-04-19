@@ -236,6 +236,16 @@ h1 em { font-style: italic; color: var(--orange-light); }
   html { scroll-behavior: auto; }
 }
 
+/* ── LANG SWITCHER ── */
+.nav-lang-switcher { display: flex; align-items: center; gap: .2rem; }
+.lang-btn { font-size: .72rem; font-weight: 700; color: var(--text-soft); padding: .22rem .48rem; border-radius: var(--radius-sm); cursor: pointer; transition: all var(--transition); background: none; border: 1px solid transparent; letter-spacing: .5px; }
+.lang-btn:hover { color: var(--orange); border-color: rgba(244,129,32,.4); }
+.lang-btn.active { color: var(--orange); border-color: var(--orange); background: rgba(244,129,32,.08); }
+@media (max-width: 768px) {
+  .nav-lang-switcher { gap: .5rem; }
+  .lang-btn { font-size: .9rem; padding: .4rem .7rem; }
+}
+
 /* ── REVEAL SAFETY: noscript / slow-load fallback ── */
 @media (prefers-reduced-motion: no-preference) {
   /* after 2s with no JS, force visibility */
