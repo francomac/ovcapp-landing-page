@@ -211,7 +211,7 @@ h1 em { font-style: italic; color: var(--orange-light); }
 
 /* ══ RESPONSIVE ══ */
 @media (max-width: 960px) {
-  .hero { padding-block-start: 6.5rem; padding-block-end: 3rem; }
+  .hero { padding-block-start: 8.5rem; padding-block-end: 3rem; }
   .features-list { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
