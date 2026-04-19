@@ -1662,7 +1662,7 @@
       }
 
       document.querySelectorAll("[data-app-link]").forEach((link) => {
-        link.addEventListener("click", (e) => {
+        link.addEventListener("click", function (e) {
           e.preventDefault();
           openModal();
         });

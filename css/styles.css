@@ -238,7 +238,7 @@ h1 em { font-style: italic; color: var(--orange-light); }
 
 /* ── COMING SOON MODAL ── */
 .modal-backdrop {
-  position: fixed; inset: 0; z-index: 600;
+  position: fixed !important; inset: 0; z-index: 600; ;
   background: rgba(20, 50, 70, .65);
   backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);
   display: flex; align-items: center; justify-content: center;
@@ -247,6 +247,7 @@ h1 em { font-style: italic; color: var(--orange-light); }
   transition: opacity .3s ease, visibility .3s ease;
 }
 .modal-backdrop.open { opacity: 1; visibility: visible; }
+
 .modal-card {
   background: var(--white);
   border-radius: var(--radius-xl);
