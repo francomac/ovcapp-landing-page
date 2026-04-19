@@ -290,7 +290,7 @@ h1 em { font-style: italic; color: var(--orange-light); }
   border-radius: var(--radius-md);
   border-left: 3px solid var(--orange);
 }
-.modal-footer { display: flex; flex-direction: column; gap: .85rem; align-items: center; }
+.modal-footer { display: flex; flex-direction: column; gap: .95rem; align-items: center; }
 .modal-cta { width: 100%; font-size: 1rem; }
 .modal-hint { font-size: .82rem; }
 .modal-hint a { color: var(--text-soft); transition: color var(--transition); }
