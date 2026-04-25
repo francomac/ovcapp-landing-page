@@ -93,7 +93,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .nav-social-icon:hover { color: var(--navy); background: rgba(30,86,120,.08); }
 
 /* ── HERO ── */
-.hero { min-height: 80svh; background: var(--navy); display: grid; grid-template-columns: 1fr; align-items: center; padding: 6rem var(--gutter) 4rem; position: relative; overflow: hidden; }
+.hero { min-height: 80svh; background: var(--navy); display: grid; grid-template-columns: 1fr; align-items: center; padding: 10rem var(--gutter) 4rem; position: relative; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 80% 30%, rgba(244,129,32,.13) 0%, transparent 60%), radial-gradient(ellipse 40% 50% at 10% 80%, rgba(36,99,138,.8) 0%, transparent 60%); pointer-events: none; }
 .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
 .hero-content { position: relative; z-index: 2; animation: fadeUp .65s ease both; max-width: 860px; margin-inline: auto; text-align: center; }
