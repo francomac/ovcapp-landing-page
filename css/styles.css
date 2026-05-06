@@ -200,6 +200,12 @@ h1 em { font-style: italic; color: var(--orange-light); }
 .footer-links { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; justify-content: center; }
 .footer-links a { color: var(--text-soft); font-size: .84rem; transition: color var(--transition); text-decoration: none; }
 .footer-links a:hover { color: var(--orange); }
+.footer-copyright { margin: 0; }
+.footer-contact { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; justify-content: center; }
+.footer-contact a { color: var(--text-soft); font-size: .84rem; transition: color var(--transition); text-decoration: none; }
+.footer-contact a:hover { color: var(--orange); }
+.footer-sep { opacity: .4; }
+.footer-socials { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; justify-content: center; }
 .footer-social { display: flex; align-items: center; justify-content: center; color: var(--text-soft); transition: color var(--transition); }
 .footer-social:hover { color: var(--orange); }
 
