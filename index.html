@@ -322,89 +322,31 @@
         id="navToggle"
         aria-label="Abrir menú"
         aria-expanded="false"
-        aria-controls="navMenu"
+        aria-controls="navMenus"
       >
         <span></span><span></span><span></span>
       </button>
 
-      <ul class="nav-links" id="navMenu" role="list">
-        <li><a href="#por-que" data-i18n="nav.why">¿Por qué?</a></li>
-        <li><a href="#funciones" data-i18n="nav.features">Funciones</a></li>
-        <li><a href="#planes" data-i18n="nav.plans">Planes</a></li>
-        <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
-        <li>
-          <a
-            href="https://www.youtube.com/@ovcapp"
-            target="_blank"
-            rel="noopener"
-            class="nav-yt"
-            data-i18n="nav.tutorials"
-            >▶ Tutoriales</a
-          >
-        </li>
-        <li class="nav-socials">
-          <a
-            href="https://www.instagram.com/ovcapp"
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram de OVCAPP"
-            class="nav-social-icon"
-          >
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+      <div class="nav-menus" id="navMenus">
+        <ul class="nav-links nav-links--center" role="list">
+          <li><a href="#por-que" data-i18n="nav.why">¿Por qué?</a></li>
+          <li><a href="#funciones" data-i18n="nav.features">Funciones</a></li>
+          <li><a href="#planes" data-i18n="nav.plans">Planes</a></li>
+          <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
+        </ul>
+        <ul class="nav-links nav-links--right" role="list">
+          <li class="nav-lang-switcher">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="pt">PT</button>
+          </li>
+          <li>
+            <a href="#" class="nav-cta" data-app-link data-i18n="nav.cta"
+              >Prueba gratis</a
             >
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-              <circle cx="12" cy="12" r="4" />
-              <circle
-                cx="17.5"
-                cy="6.5"
-                r="1"
-                fill="currentColor"
-                stroke="none"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.facebook.com/ovcapp"
-            target="_blank"
-            rel="noopener"
-            aria-label="Facebook de OVCAPP"
-            class="nav-social-icon"
-          >
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-              />
-            </svg>
-          </a>
-        </li>
-        <li class="nav-lang-switcher">
-          <button class="lang-btn active" data-lang="es">ES</button>
-          <button class="lang-btn" data-lang="en">EN</button>
-          <button class="lang-btn" data-lang="pt">PT</button>
-        </li>
-        <li>
-          <a href="#" class="nav-cta" data-app-link data-i18n="nav.cta"
-            >Prueba gratis</a
-          >
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- ══ HERO ══ -->
@@ -480,7 +422,7 @@
       <div class="container">
         <p class="section-label" data-i18n="why.label">¿Por qué OVCAPP?</p>
         <h2 class="section-title reveal" data-i18n-html="why.title">
-          No es un software bovino adaptado.<br /><u>ES UNO PROPIO</u>.
+          No es una plataforma bovina adaptada.<br /><u>ES UNA PROPIA</u>.
         </h2>
         <p class="section-sub reveal" data-i18n="why.sub">
           Cada variable y cada registro fue pensado para la biología y el
@@ -727,7 +669,7 @@
                 >animales</span
               >
             </div>
-            <div class="price-cost">
+            <div class="price-cost" style="display:none">
               <sup class="price-currency">$</sup>
               <span class="price-num">0</span>
               <span class="price-period" data-i18n="price.free.period"
@@ -762,7 +704,7 @@
                 >animales</span
               >
             </div>
-            <div class="price-cost">
+            <div class="price-cost" style="display:none">
               <sup class="price-currency">$</sup>
               <span class="price-num">X.XXX</span>
               <span class="price-period" data-i18n="price.period">/ mes</span>
@@ -807,7 +749,7 @@
                 >animales</span
               >
             </div>
-            <div class="price-cost">
+            <div class="price-cost" style="display:none">
               <sup class="price-currency">$</sup>
               <span class="price-num">X.XXX</span>
               <span class="price-period" data-i18n="price.period">/ mes</span>
@@ -846,7 +788,7 @@
                 >animales</span
               >
             </div>
-            <div class="price-cost">
+            <div class="price-cost" style="display:none">
               <sup class="price-currency">$</sup>
               <span class="price-num">X.XXX</span>
               <span class="price-period" data-i18n="price.period">/ mes</span>
@@ -885,7 +827,7 @@
                 >animales</span
               >
             </div>
-            <div class="price-cost">
+            <div class="price-cost" style="display:none">
               <sup class="price-currency">$</sup>
               <span class="price-num">X.XXX</span>
               <span class="price-period" data-i18n="price.period">/ mes</span>
@@ -1206,7 +1148,7 @@
             '"No lo pensamos para el productor, lo hicimos con él."',
           "why.label": "¿Por qué OVCAPP?",
           "why.title":
-            "No es un software bovino adaptado.<br><u>ES UNO PROPIO</u>.",
+            "No es una plataforma bovina adaptada.<br><u>ES UNA PROPIA</u>.",
           "why.sub":
             "Cada variable y cada registro fue pensado para la biología y el negocio de las ovejas y las cabras.",
           "why1.title": "Especializado en rumiantes menores",
@@ -1337,7 +1279,7 @@
             '"We didn\'t design it for the producer, we made it with them."',
           "why.label": "Why OVCAPP?",
           "why.title":
-            "Not an adapted bovine software.<br><u>IT'S PURPOSE-BUILT</u>.",
+            "Not an adapted bovine platform.<br><u>IT'S PURPOSE-BUILT</u>.",
           "why.sub":
             "Every variable and every record was designed for the biology and business of sheep and goats.",
           "why1.title": "Specialized in small ruminants",
@@ -1467,7 +1409,7 @@
           "quote.text": '"Não pensamos para o produtor, fizemos com ele."',
           "why.label": "Por que OVCAPP?",
           "why.title":
-            "Não é um software bovino adaptado.<br><u>É EXCLUSIVO</u>.",
+            "Não é uma plataforma bovina adaptada.<br><u>É EXCLUSIVA</u>.",
           "why.sub":
             "Cada variável e cada registro foi pensado para a biologia e o negócio de ovelhas e cabras.",
           "why1.title": "Especializado em pequenos ruminantes",
@@ -1629,7 +1571,7 @@
 
       /* ── Mobile menu ── */
       const toggle = document.getElementById("navToggle");
-      const menu = document.getElementById("navMenu");
+      const menu = document.getElementById("navMenus");
       toggle.addEventListener("click", () => {
         const open = menu.classList.toggle("open");
         toggle.classList.toggle("open", open);
