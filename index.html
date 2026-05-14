@@ -1239,6 +1239,9 @@
           "modal.body":
             "En los próximos meses abriremos el acceso a todos los productores. Estamos trabajando para ofrecerte la mejor experiencia desde el primer día.",
           "modal.cta": "Entendido",
+          "modal.mailto.subject": "Ovcapp: Lista de Espera",
+          "modal.mailto.body":
+            "Hola, equipo de OVCAPP:\r\n\r\nQuiero unirme a la lista de espera. Mi nombre es [nombre], soy de [país] y trabajo con producción [ovina / caprina / mixta / otra] con aproximadamente [cantidad] animales. Me enteré de OVCAPP por [Facebook / Instagram / otro].\r\n\r\n¡Gracias!",
         },
         en: {
           meta: {
@@ -1370,6 +1373,9 @@
           "modal.body":
             "In the coming months we'll open access to all producers. We're working to give you the best experience from day one.",
           "modal.cta": "Got it, can't wait!",
+          "modal.mailto.subject": "Ovcapp: Waiting List",
+          "modal.mailto.body":
+            "Hi OVCAPP team,\r\n\r\nI'd like to join the waiting list. My name is [name], I'm from [country], and I work with [sheep / goat / mixed / other] livestock with approximately [number] animals. I heard about OVCAPP through [Facebook / Instagram / other].\r\n\r\nThanks!",
         },
         pt: {
           meta: {
@@ -1500,6 +1506,9 @@
           "modal.body":
             "Nos próximos meses abriremos o acesso a todos os produtores. Estamos trabalhando para oferecer a melhor experiência desde o primeiro dia.",
           "modal.cta": "Entendido",
+          "modal.mailto.subject": "Ovcapp: Lista de Espera",
+          "modal.mailto.body":
+            "Olá, equipe da OVCAPP:\r\n\r\nQuero entrar na lista de espera. Meu nome é [nome], sou de [país] e trabalho com produção [ovina / caprina / mista / outra] com aproximadamente [quantidade] animais. Conheci a OVCAPP por [Facebook / Instagram / outro].\r\n\r\nObrigado!",
         },
       };
 
@@ -1557,6 +1566,19 @@
           isOpen ? i18n[lang]["nav.close"] : i18n[lang]["nav.open"],
         );
 
+        // Waitlist mailto (subject + body prefilled per language)
+        const waitlistBtn = document.getElementById("modalCloseBtn");
+        if (waitlistBtn) {
+          const subject = encodeURIComponent(
+            i18n[lang]["modal.mailto.subject"],
+          );
+          const body = encodeURIComponent(i18n[lang]["modal.mailto.body"]);
+          waitlistBtn.setAttribute(
+            "href",
+            `mailto:info@ovcapp.com?subject=${subject}&body=${body}`,
+          );
+        }
+
         localStorage.setItem("ovcapp-lang", lang);
       }
 
@@ -1587,7 +1609,6 @@
       document.querySelectorAll(".lang-btn").forEach((btn) => {
         btn.addEventListener("click", () => applyLang(btn.dataset.lang));
       });
-      applyLang(currentLang());
 
       /* ── Reveal on scroll ── */
       const observer = new IntersectionObserver(
@@ -1659,7 +1680,7 @@
         </p>
 
         <a
-          href="mailto:info@ovcapp.com"
+          href="mailto:info@ovcapp.com?subject=Ovcapp%3A%20Lista%20de%20Espera"
           class="btn btn-primary"
           data-i18n="cta.btn2"
           id="modalCloseBtn"
@@ -1731,6 +1752,9 @@
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeModal();
       });
+
+      /* ── Initial language apply (runs after modal exists in DOM) ── */
+      applyLang(currentLang());
     </script>
   </body>
 </html>
