@@ -9,6 +9,8 @@
   --orange:       #F48120;
   --orange-light: #F9962A;
   --orange-pale:  #FEF3E8;
+  --green:        #27AE60;
+  --green-light:  #2ECC71;
   --navy:         #1E5678;
   --navy-mid:     #24638A;
   --navy-light:   #2A709C;
@@ -170,8 +172,12 @@ h1 em { font-style: italic; color: var(--orange-light); }
 .price-card--featured .price-currency { color: var(--orange-light); }
 .price-card--featured .price-num { color: var(--white); }
 .price-card--featured .price-period { color: var(--orange-light); }
-.price-annual { font-size: .72rem; font-weight: 700; color: var(--orange); letter-spacing: .2px; text-align: center; margin: -1.1rem 0 1.5rem; }
-.price-card--featured .price-annual { color: var(--orange-light); }
+.price-pills { display: flex; flex-direction: column; align-items: center; gap: .4rem; margin: -.75rem 0 1.5rem; }
+.price-peranimal, .price-annual { display: inline-flex; align-items: center; gap: .25rem; font-size: .66rem; font-weight: 700; letter-spacing: .4px; text-transform: uppercase; white-space: nowrap; padding: .3rem .72rem; border-radius: 100px; margin: 0; }
+.price-peranimal { background: var(--orange); color: var(--white); }
+.price-annual { background: var(--green); color: var(--white); }
+.price-card--featured .price-peranimal { background: var(--orange-light); }
+.price-card--featured .price-annual { background: var(--green-light); }
 .price-features { display: flex; flex-direction: column; gap: .75rem; flex: 1; }
 .price-features li { font-size: .86rem; color: #444; display: flex; align-items: flex-start; gap: .65rem; line-height: 1.5; }
 .price-features li::before { content: ''; display: inline-block; width: 15px; height: 15px; flex-shrink: 0; margin-top: 1px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F48120' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); background-size: contain; background-repeat: no-repeat; }
