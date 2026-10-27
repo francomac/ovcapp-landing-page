@@ -161,15 +161,17 @@ h1 em { font-style: italic; color: var(--orange-light); }
 .price-animals-label { font-size: .72rem; color: #888; letter-spacing: 2px; text-transform: uppercase; margin-top: .35rem; }
 .price-card--featured .price-animals-num { color: var(--white); }
 .price-card--featured .price-animals-label { color: rgba(255,255,255,.45); }
-.price-cost { display: flex; align-items: baseline; gap: .15rem; padding-top: 1.1rem; border-top: 1px solid var(--gray-mid); margin-bottom: 1.5rem; }
+.price-cost { display: flex; align-items: baseline; justify-content: center; gap: .15rem; padding-top: 1.1rem; border-top: 1px solid var(--gray-mid); margin-bottom: 1.5rem; }
 .price-card--featured .price-cost { border-top-color: rgba(255,255,255,.12); }
 .price-contact { padding-top: 1.1rem; border-top: 1px solid var(--gray-mid); margin-bottom: 1.5rem; font-size: .75rem; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: .5px; }
 .price-currency { font-size: .95rem; font-weight: 700; color: var(--navy); vertical-align: super; line-height: 1; margin-right: .1rem; }
-.price-num { font-size: 1.4rem; font-weight: 800; color: var(--navy); line-height: 1; }
-.price-period { font-size: .82rem; color: #aaa; margin-left: .3rem; }
+.price-num { font-size: 2rem; font-weight: 800; color: var(--navy); line-height: 1; }
+.price-period { font-size: .82rem; color: var(--orange); margin-left: .3rem; }
 .price-card--featured .price-currency { color: var(--orange-light); }
 .price-card--featured .price-num { color: var(--white); }
-.price-card--featured .price-period { color: rgba(255,255,255,.4); }
+.price-card--featured .price-period { color: var(--orange-light); }
+.price-annual { font-size: .72rem; font-weight: 700; color: var(--orange); letter-spacing: .2px; text-align: center; margin: -1.1rem 0 1.5rem; }
+.price-card--featured .price-annual { color: var(--orange-light); }
 .price-features { display: flex; flex-direction: column; gap: .75rem; flex: 1; }
 .price-features li { font-size: .86rem; color: #444; display: flex; align-items: flex-start; gap: .65rem; line-height: 1.5; }
 .price-features li::before { content: ''; display: inline-block; width: 15px; height: 15px; flex-shrink: 0; margin-top: 1px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F48120' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); background-size: contain; background-repeat: no-repeat; }
