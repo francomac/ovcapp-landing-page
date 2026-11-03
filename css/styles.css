@@ -257,10 +257,10 @@ h1 em { font-style: italic; color: var(--orange-light); }
 @media (min-width: 769px) and (max-width: 1099px) {
   .nav { padding-inline: 1rem; }
   .nav-logo-img { max-width: 80px; }
-  .nav-links { gap: .9rem; }
+  .nav-links { gap: .65rem; }
   .nav-links a { font-size: .82rem; }
-  .nav-links--center { margin-left: 1rem; }
-  .nav-lang-switcher { margin-right: .9rem; }
+  .nav-links--center { margin-left: .5rem; }
+  .nav-lang-switcher { margin-right: .65rem; }
   .nav-cta { padding: .5rem .8rem; }
   .nav-link-faq { display: none; }
 }
@@ -303,13 +303,17 @@ h1 em { font-style: italic; color: var(--orange-light); }
 }
 
 /* ── LANG SWITCHER ── */
-.nav-lang-switcher { display: flex; align-items: center; gap: .2rem; z-index: 201; }
-.lang-btn { font-size: .72rem; font-weight: 700; color: var(--text-soft); padding: .22rem .48rem; border-radius: var(--radius-sm); cursor: pointer; transition: all var(--transition); background: none; border: 1px solid transparent; letter-spacing: .5px; }
-.lang-btn:hover { color: var(--orange); border-color: rgba(244,129,32,.4); }
-.lang-btn.active { color: var(--orange); border-color: var(--orange); background: rgba(244,129,32,.08); }
+.nav-lang-switcher { position: relative; display: flex; align-items: center; z-index: 201; }
+.lang-icon { position: absolute; inset-inline-start: .6rem; width: 14px; height: 14px; color: var(--text-soft); pointer-events: none; }
+.lang-select { appearance: none; -webkit-appearance: none; font-family: inherit; font-size: .82rem; font-weight: 600; color: var(--navy); padding: .4rem 1.6rem .4rem 1.9rem; background: var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231E5678' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right .55rem center / 11px; border: 1px solid var(--gray-mid); border-radius: var(--radius-sm); cursor: pointer; transition: border-color var(--transition); }
+.lang-select:hover { border-color: var(--orange); }
+.lang-select:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+@media (min-width: 769px) and (max-width: 1099px) {
+  .lang-select { font-size: .78rem; padding-inline: 1.7rem 1.35rem; }
+}
 @media (max-width: 768px) {
-  .nav-lang-switcher { gap: .25rem; }
-  .lang-btn { min-width: 40px; min-height: 40px; font-size: .85rem; padding: 0; }
+  /* 16px keeps iOS from zooming the page when the selector gets focus */
+  .lang-select { min-height: 40px; font-size: 16px; }
 }
 
 /* ── REVEAL SAFETY: noscript / slow-load fallback ── */
