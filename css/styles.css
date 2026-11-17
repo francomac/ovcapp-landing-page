@@ -144,13 +144,8 @@ h1 em { font-style: italic; color: var(--orange-light); }
 .feature-item.active .feature-dot { background: var(--orange); }
 .feature-item-title { font-weight: 600; color: var(--navy); margin-bottom: .2rem; font-size: .95rem; }
 .feature-item-desc { font-size: .86rem; color: var(--text-soft); line-height: 1.6; }
-.feature-item--dev { opacity: .72; }
-.feature-item--dev:hover, .feature-item--dev.active { background: rgba(30,86,120,.04); border-color: var(--gray-mid); }
 
 /* chart */
-
-/* ── BADGE DEV ── */
-.badge-dev { display: inline-block; background: rgba(244,129,32,.12); color: var(--orange); font-size: .65rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; padding: .18rem .55rem; border-radius: 4px; border: 1px solid rgba(244,129,32,.25); vertical-align: middle; margin-left: .4rem; font-family: var(--font-body); }
 
 /* ── PRICING ── */
 .pricing { background: var(--gray-light); }
@@ -191,6 +186,15 @@ h1 em { font-style: italic; color: var(--orange-light); }
 .price-btn:hover { background: #162340; color: var(--white); }
 .price-btn--primary, .price-card--featured .price-btn { background: var(--orange); }
 .price-btn--primary:hover, .price-card--featured .price-btn:hover { background: #d96e10; }
+.price-paid-note { margin-top: 1.25rem; padding: .75rem; font-size: .88rem; line-height: 1.45; text-align: center; color: var(--text-soft); border: 1px dashed var(--gray); border-radius: var(--radius-md); }
+.price-card--featured .price-paid-note { color: rgba(255,255,255,.85); border-color: rgba(255,255,255,.4); }
+.pricing-how { max-width: 720px; margin: 0 auto 2.5rem; padding: 1.4rem 1.6rem; text-align: left; background: var(--white); border: 2px solid var(--orange); border-radius: 14px; }
+.pricing-how-title { font-size: .85rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--orange); margin-bottom: .8rem; }
+.pricing-how-steps { list-style: none; display: flex; flex-direction: column; gap: .9rem; }
+.pricing-how-steps li { display: flex; align-items: flex-start; gap: .8rem; font-size: 1.08rem; line-height: 1.45; color: var(--navy); }
+.pricing-how-num { flex: 0 0 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--navy); color: var(--white); font-weight: 800; }
+.pricing-how-have { margin-top: 1.1rem; padding-top: 1rem; border-top: 1px solid var(--gray-mid); font-size: 1rem; color: var(--text-soft); }
+.pricing-how-have a { color: var(--orange); font-weight: 700; text-decoration: underline; }
 .pricing-cta { text-align: center; margin-top: 2.5rem; }
 .cta-strip { text-align: center; margin-top: 2.5rem; }
 .pricing-note { text-align: center; margin-top: 1.5rem; font-size: .9rem; color: var(--text-soft); line-height: 1.6; }
