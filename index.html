@@ -350,6 +350,7 @@
               href="https://ovcapp-app.onrender.com/auth/signin"
               class="nav-login"
               data-login
+              data-cta="nav"
               data-i18n="cta.login"
               >Iniciar sesión</a
             >
@@ -488,7 +489,7 @@
               Siempre actualizado, sin costo extra
             </h3>
             <p class="why-desc" data-i18n="why2.desc">
-              Tu suscripción mensual incluye todas las mejoras y nuevas
+              Tu plan mensual incluye todas las mejoras y nuevas
               funciones. No hay versiones nuevas que comprar ni quedarse atrás.
             </p>
           </article>
@@ -617,18 +618,11 @@
                 </p>
               </div>
             </li>
-            <li
-              class="feature-item feature-item--dev reveal"
-              role="listitem"
-              tabindex="0"
-            >
+            <li class="feature-item reveal" role="listitem" tabindex="0">
               <div class="feature-dot" aria-hidden="true">💉</div>
               <div>
-                <p class="feature-item-title">
-                  <span data-i18n="feat6.title">Gestión sanitaria</span>
-                  <span class="badge-dev" data-i18n="badge.dev"
-                    >En desarrollo</span
-                  >
+                <p class="feature-item-title" data-i18n="feat6.title">
+                  Gestión sanitaria
                 </p>
                 <p class="feature-item-desc" data-i18n="feat6.desc">
                   Vacunaciones, desparasitaciones y tratamientos veterinarios
@@ -665,6 +659,36 @@
             Pagás según tus animales activos. Desde el plan Básico tenés todos los
             módulos.
           </p>
+          <div class="pricing-how reveal">
+            <p class="pricing-how-title" data-i18n="pricing.how.title">
+              Cómo funciona
+            </p>
+            <ol class="pricing-how-steps" role="list">
+              <li>
+                <span class="pricing-how-num" aria-hidden="true">1</span>
+                <span data-i18n-html="pricing.how.step1"
+                  ><b>Creá tu cuenta gratis.</b> Incluye hasta 5 animales, sin
+                  tarjeta.</span
+                >
+              </li>
+              <li>
+                <span class="pricing-how-num" aria-hidden="true">2</span>
+                <span data-i18n-html="pricing.how.step2"
+                  ><b>¿Necesitás más animales?</b> Comprá un plan adentro de
+                  OVCAPP, en <b>«Mi plan y pagos»</b>.</span
+                >
+              </li>
+            </ol>
+            <p class="pricing-how-have" data-i18n-html="pricing.how.have">
+              ¿Ya tenés cuenta?
+              <a
+                href="https://ovcapp-app.onrender.com/auth/signin"
+                data-login
+                data-cta="pricing_how"
+                >Entrá para ver o cambiar tu plan →</a
+              >
+            </p>
+          </div>
         </div>
 
         <div class="pricing-grid pricing-grid--5 reveal">
@@ -697,7 +721,7 @@
                   Registro de pesos y condición corporal
                 </li>
                 <li data-i18n="price.feat.milk">Producción de leche y secado</li>
-                <li><span><span data-i18n="price.feat.health">Gestión sanitaria</span><sup class="price-feat-dev-mark" aria-hidden="true">*</sup></span></li>
+                <li data-i18n="price.feat.health">Gestión sanitaria</li>
                 <li data-i18n="price.feat.ai">IA / IATF</li>
                 <li data-i18n="price.feat.reports">Reportes</li>
                 <li data-i18n="price.feat.access">
@@ -751,7 +775,7 @@
                   Registro de pesos y condición corporal
                 </li>
                 <li data-i18n="price.feat.milk">Producción de leche y secado</li>
-                <li><span><span data-i18n="price.feat.health">Gestión sanitaria</span><sup class="price-feat-dev-mark" aria-hidden="true">*</sup></span></li>
+                <li data-i18n="price.feat.health">Gestión sanitaria</li>
                 <li data-i18n="price.feat.nitrogen">Tanque de nitrógeno</li>
                 <li data-i18n="price.feat.ai">IA / IATF</li>
                 <li data-i18n="price.feat.embryo">Módulo de embriones</li>
@@ -762,14 +786,9 @@
                 </li>
               </ul>
             </details>
-            <a
-              href="https://ovcapp-app.onrender.com/auth/signup"
-              class="btn price-btn"
-              data-signup
-              data-cta="pricing_basic"
-              data-i18n="cta.start"
-              >Empezar gratis</a
-            >
+            <p class="price-paid-note" data-i18n="pricing.paid.note">
+              Este plan se compra adentro de OVCAPP, después de crear tu cuenta.
+            </p>
           </article>
 
           <article class="price-card price-card--featured">
@@ -814,7 +833,7 @@
                   Registro de pesos y condición corporal
                 </li>
                 <li data-i18n="price.feat.milk">Producción de leche y secado</li>
-                <li><span><span data-i18n="price.feat.health">Gestión sanitaria</span><sup class="price-feat-dev-mark" aria-hidden="true">*</sup></span></li>
+                <li data-i18n="price.feat.health">Gestión sanitaria</li>
                 <li data-i18n="price.feat.nitrogen">Tanque de nitrógeno</li>
                 <li data-i18n="price.feat.ai">IA / IATF</li>
                 <li data-i18n="price.feat.embryo">Módulo de embriones</li>
@@ -825,14 +844,9 @@
                 </li>
               </ul>
             </details>
-            <a
-              href="https://ovcapp-app.onrender.com/auth/signup"
-              class="btn price-btn"
-              data-signup
-              data-cta="pricing_standard"
-              data-i18n="cta.start"
-              >Empezar gratis</a
-            >
+            <p class="price-paid-note" data-i18n="pricing.paid.note">
+              Este plan se compra adentro de OVCAPP, después de crear tu cuenta.
+            </p>
           </article>
 
           <article class="price-card">
@@ -874,7 +888,7 @@
                   Registro de pesos y condición corporal
                 </li>
                 <li data-i18n="price.feat.milk">Producción de leche y secado</li>
-                <li><span><span data-i18n="price.feat.health">Gestión sanitaria</span><sup class="price-feat-dev-mark" aria-hidden="true">*</sup></span></li>
+                <li data-i18n="price.feat.health">Gestión sanitaria</li>
                 <li data-i18n="price.feat.nitrogen">Tanque de nitrógeno</li>
                 <li data-i18n="price.feat.ai">IA / IATF</li>
                 <li data-i18n="price.feat.embryo">Módulo de embriones</li>
@@ -885,14 +899,9 @@
                 </li>
               </ul>
             </details>
-            <a
-              href="https://ovcapp-app.onrender.com/auth/signup"
-              class="btn price-btn"
-              data-signup
-              data-cta="pricing_advanced"
-              data-i18n="cta.start"
-              >Empezar gratis</a
-            >
+            <p class="price-paid-note" data-i18n="pricing.paid.note">
+              Este plan se compra adentro de OVCAPP, después de crear tu cuenta.
+            </p>
           </article>
 
           <article class="price-card">
@@ -934,7 +943,7 @@
                   Registro de pesos y condición corporal
                 </li>
                 <li data-i18n="price.feat.milk">Producción de leche y secado</li>
-                <li><span><span data-i18n="price.feat.health">Gestión sanitaria</span><sup class="price-feat-dev-mark" aria-hidden="true">*</sup></span></li>
+                <li data-i18n="price.feat.health">Gestión sanitaria</li>
                 <li data-i18n="price.feat.nitrogen">Tanque de nitrógeno</li>
                 <li data-i18n="price.feat.ai">IA / IATF</li>
                 <li data-i18n="price.feat.embryo">Módulo de embriones</li>
@@ -945,14 +954,9 @@
                 </li>
               </ul>
             </details>
-            <a
-              href="https://ovcapp-app.onrender.com/auth/signup"
-              class="btn price-btn"
-              data-signup
-              data-cta="pricing_enterprise"
-              data-i18n="cta.start"
-              >Empezar gratis</a
-            >
+            <p class="price-paid-note" data-i18n="pricing.paid.note">
+              Este plan se compra adentro de OVCAPP, después de crear tu cuenta.
+            </p>
           </article>
         </div>
 
@@ -975,19 +979,15 @@
         </div>
 
         <p class="pricing-note reveal" data-i18n-html="pricing.note">
-          🔐 Los planes se gestionan desde dentro de la plataforma. Registrate
-          gratis y elegí tu plan una vez que estés adentro.<br />
-          <span style="display: block; margin-top: 0.5rem"
-            >¿Más de 1000 animales?
-            <a
-              href="mailto:info@ovcapp.com"
-              id="pricingContactLink"
-              data-cta="pricing_note"
-              style="color: var(--orange); font-weight: 600"
-              >Contactanos</a
-            >
-            para una solución personalizada.</span
+          ¿Más de 1000 animales?
+          <a
+            href="mailto:info@ovcapp.com"
+            id="pricingContactLink"
+            data-cta="pricing_note"
+            style="color: var(--orange); font-weight: 600"
+            >Contactanos</a
           >
+          para una solución personalizada.
         </p>
       </div>
     </section>
@@ -1176,6 +1176,7 @@
 
       /* ── Links & language ── */
       const SIGNUP_URL = "https://ovcapp-app.onrender.com/auth/signup";
+      const SIGNIN_URL = "https://ovcapp-app.onrender.com/auth/signin";
       const WHATSAPP_URL = "https://wa.me/50688445174";
       const CONTACT_EMAIL = "info@ovcapp.com";
       const LANG_STORAGE_KEY = "ovcapp-lang";
@@ -1210,7 +1211,6 @@
           "nav.faq": "FAQ",
           "cta.signup": "Crear cuenta gratis",
           "cta.login": "Iniciar sesión",
-          "cta.start": "Empezar gratis",
           "hero.note": "Gratis hasta 5 animales · Sin tarjeta de crédito",
           "price.details": "Ver qué incluye",
           "contact.cta.whatsapp.text": "Hola, quiero más información sobre Ovcapp.",
@@ -1266,7 +1266,7 @@
             "Las ovejas y cabras tienen ciclos reproductivos y parámetros productivos completamente distintos al ganado bovino. OVCAPP entiende eso.",
           "why2.title": "Siempre actualizado, sin costo extra",
           "why2.desc":
-            "Tu suscripción mensual incluye todas las mejoras y nuevas funciones. No hay versiones nuevas que comprar ni quedarse atrás.",
+            "Tu plan mensual incluye todas las mejoras y nuevas funciones. No hay versiones nuevas que comprar ni quedarse atrás.",
           "why3.title": "Pagás según tu hato",
           "why3.desc":
             "El costo depende de la cantidad de animales activos. Empezás con lo que tenés y escalás sin penalizaciones. Simple y justo.",
@@ -1276,7 +1276,6 @@
           "why6.title": "Reportes de tu hato",
           "why6.desc":
             "Mirá en reportes cómo va tu hato en lo productivo y en lo reproductivo, con los datos que registrás cada día.",
-          "badge.dev": "En desarrollo",
           "features.label": "Funciones",
           "features.title": "Todo lo que necesitás, en un solo lugar.",
           "features.sub":
@@ -1306,6 +1305,15 @@
           "pricing.title": "Planes que crecen con tu finca.",
           "pricing.sub":
             "Pagás según tus animales activos. Desde el plan Básico tenés todos los módulos.",
+          "pricing.how.title": "Cómo funciona",
+          "pricing.how.step1":
+            "<b>Creá tu cuenta gratis.</b> Incluye hasta 5 animales, sin tarjeta.",
+          "pricing.how.step2":
+            "<b>¿Necesitás más animales?</b> Comprá un plan adentro de OVCAPP, en <b>«Mi plan y pagos»</b>.",
+          "pricing.how.have":
+            '¿Ya tenés cuenta? <a href="https://ovcapp-app.onrender.com/auth/signin" data-login data-cta="pricing_how">Entrá para ver o cambiar tu plan →</a>',
+          "pricing.paid.note":
+            "Este plan se compra adentro de OVCAPP, después de crear tu cuenta.",
           "plan.free": "Gratis",
           "plan.basic": "Básico",
           "plan.standard": "Estándar",
@@ -1336,7 +1344,7 @@
           "pricing.dev.note":
             '<strong>*</strong> Módulo en desarrollo.',
           "pricing.note":
-            '🔐 Los planes se gestionan desde dentro de la plataforma. Registrate gratis y elegí tu plan una vez que estés adentro.<br><span style="display:block;margin-top:.5rem">¿Más de 1000 animales? <a href="mailto:info@ovcapp.com" id="pricingContactLink" data-cta="pricing_note" style="color:var(--orange);font-weight:600">Contactanos</a> para una solución personalizada.</span>',
+            '¿Más de 1000 animales? <a href="mailto:info@ovcapp.com" id="pricingContactLink" data-cta="pricing_note" style="color:var(--orange);font-weight:600">Contactanos</a> para una solución personalizada.',
           "origin.label": "Nuestra historia",
           "origin.title": "Nació en una finca,<br>no en una oficina.",
           "origin.sub1":
@@ -1371,7 +1379,6 @@
           "nav.faq": "FAQ",
           "cta.signup": "Create free account",
           "cta.login": "Sign in",
-          "cta.start": "Start free",
           "hero.note": "Free for up to 5 animals · No credit card",
           "price.details": "See what's included",
           "contact.cta.whatsapp.text": "Hi, I'd like more information about Ovcapp.",
@@ -1426,7 +1433,7 @@
             "Sheep and goats have reproductive cycles and productive parameters completely different from cattle. OVCAPP understands that.",
           "why2.title": "Always updated, at no extra cost",
           "why2.desc":
-            "Your monthly subscription includes all improvements and new features. No new versions to buy or fall behind on.",
+            "Your monthly plan includes all improvements and new features. No new versions to buy or fall behind on.",
           "why3.title": "Pay based on your herd",
           "why3.desc":
             "The cost depends on the number of active animals. Start with what you have and scale without penalties. Simple and fair.",
@@ -1436,7 +1443,6 @@
           "why6.title": "Reports on your herd",
           "why6.desc":
             "See in reports how your herd is doing, both productively and reproductively, using the data you record every day.",
-          "badge.dev": "In development",
           "features.label": "Features",
           "features.title": "Everything you need, in one place.",
           "features.sub":
@@ -1466,6 +1472,15 @@
           "pricing.title": "Plans that grow with your farm.",
           "pricing.sub":
             "You pay according to your active animals. From the Basic plan up, you get all modules.",
+          "pricing.how.title": "How it works",
+          "pricing.how.step1":
+            "<b>Create your free account.</b> Includes up to 5 animals, no card.",
+          "pricing.how.step2":
+            "<b>Need more animals?</b> Buy a plan inside OVCAPP, under <b>“My plan & payments”</b>.",
+          "pricing.how.have":
+            'Already have an account? <a href="https://ovcapp-app.onrender.com/auth/signin" data-login data-cta="pricing_how">Sign in to see or change your plan →</a>',
+          "pricing.paid.note":
+            "You buy this plan inside OVCAPP, after creating your account.",
           "plan.free": "Free",
           "plan.basic": "Basic",
           "plan.standard": "Standard",
@@ -1496,7 +1511,7 @@
           "pricing.dev.note":
             '<strong>*</strong> Module in development.',
           "pricing.note":
-            '🔐 Plans are managed from within the platform. Sign up for free and choose your plan once you\'re inside.<br><span style="display:block;margin-top:.5rem">More than 1,000 animals? <a href="mailto:info@ovcapp.com" id="pricingContactLink" data-cta="pricing_note" style="color:var(--orange);font-weight:600">Contact us</a> for a custom solution.</span>',
+            'More than 1,000 animals? <a href="mailto:info@ovcapp.com" id="pricingContactLink" data-cta="pricing_note" style="color:var(--orange);font-weight:600">Contact us</a> for a custom solution.',
           "origin.label": "Our Story",
           "origin.title": "Born on a farm,<br>not in an office.",
           "origin.sub1":
@@ -1531,7 +1546,6 @@
           "nav.faq": "FAQ",
           "cta.signup": "Criar conta grátis",
           "cta.login": "Entrar",
-          "cta.start": "Começar grátis",
           "hero.note": "Grátis até 5 animais · Sem cartão de crédito",
           "price.details": "Ver o que inclui",
           "contact.cta.whatsapp.text": "Olá, quero mais informações sobre o Ovcapp.",
@@ -1587,7 +1601,7 @@
             "Ovelhas e cabras têm ciclos reprodutivos e parâmetros produtivos completamente diferentes do gado bovino. OVCAPP entende isso.",
           "why2.title": "Sempre atualizado, sem custo extra",
           "why2.desc":
-            "Sua assinatura mensal inclui todas as melhorias e novas funções. Sem versões novas para comprar ou ficar desatualizado.",
+            "Seu plano mensal inclui todas as melhorias e novas funções. Sem versões novas para comprar ou ficar desatualizado.",
           "why3.title": "Pague conforme seu rebanho",
           "why3.desc":
             "O custo depende da quantidade de animais ativos. Comece com o que você tem e escale sem penalidades. Simples e justo.",
@@ -1597,7 +1611,6 @@
           "why6.title": "Relatórios do seu rebanho",
           "why6.desc":
             "Veja em relatórios como está o seu rebanho na produção e na reprodução, com os dados que você registra todos os dias.",
-          "badge.dev": "Em desenvolvimento",
           "features.label": "Funções",
           "features.title": "Tudo que você precisa, em um só lugar.",
           "features.sub":
@@ -1627,6 +1640,15 @@
           "pricing.title": "Planos que crescem com sua fazenda.",
           "pricing.sub":
             "Você paga conforme seus animais ativos. A partir do plano Básico, você tem todos os módulos.",
+          "pricing.how.title": "Como funciona",
+          "pricing.how.step1":
+            "<b>Crie sua conta grátis.</b> Inclui até 5 animais, sem cartão.",
+          "pricing.how.step2":
+            "<b>Precisa de mais animais?</b> Compre um plano dentro do OVCAPP, em <b>“Meu plano e pagamentos”</b>.",
+          "pricing.how.have":
+            'Já tem conta? <a href="https://ovcapp-app.onrender.com/auth/signin" data-login data-cta="pricing_how">Entre para ver ou mudar seu plano →</a>',
+          "pricing.paid.note":
+            "Este plano é comprado dentro do OVCAPP, depois de criar sua conta.",
           "plan.free": "Grátis",
           "plan.basic": "Básico",
           "plan.standard": "Padrão",
@@ -1657,7 +1679,7 @@
           "pricing.dev.note":
             '<strong>*</strong> Módulo em desenvolvimento.',
           "pricing.note":
-            '🔐 Os planos são gerenciados dentro da plataforma. Cadastre-se gratuitamente e escolha seu plano depois de entrar.<br><span style="display:block;margin-top:.5rem">Mais de 1.000 animais? <a href="mailto:info@ovcapp.com" id="pricingContactLink" data-cta="pricing_note" style="color:var(--orange);font-weight:600">Fale conosco</a> para uma solução personalizada.</span>',
+            'Mais de 1.000 animais? <a href="mailto:info@ovcapp.com" id="pricingContactLink" data-cta="pricing_note" style="color:var(--orange);font-weight:600">Fale conosco</a> para uma solução personalizada.',
           "origin.label": "Nossa história",
           "origin.title": "Nasceu em uma fazenda,<br>não em um escritório.",
           "origin.sub1":
@@ -1708,8 +1730,8 @@
         return browserLang || DEFAULT_LANG;
       }
 
-      function buildSignupHref(lang) {
-        const url = new URL(SIGNUP_URL);
+      function buildAppHref(baseUrl, lang) {
+        const url = new URL(baseUrl);
         new URLSearchParams(window.location.search).forEach((value, key) => {
           if (key.startsWith("utm_")) url.searchParams.set(key, value);
         });
@@ -1813,10 +1835,14 @@
           .getElementById("ctaWhatsappLink")
           .setAttribute("href", `${WHATSAPP_URL}?text=${whatsappText}`);
 
-        // Signup links
-        const signupHref = buildSignupHref(lang);
+        // App links (signup + signin)
+        const signupHref = buildAppHref(SIGNUP_URL, lang);
         document.querySelectorAll("[data-signup]").forEach((link) => {
           link.setAttribute("href", signupHref);
+        });
+        const signinHref = buildAppHref(SIGNIN_URL, lang);
+        document.querySelectorAll("[data-login]").forEach((link) => {
+          link.setAttribute("href", signinHref);
         });
       }
 
@@ -1960,7 +1986,10 @@
             lang: currentLang(),
           });
         } else if (link.hasAttribute("data-login")) {
-          trackEvent("login_click");
+          trackEvent("login_click", {
+            location: ctaLocation,
+            lang: currentLang(),
+          });
         } else if (href.startsWith("mailto:")) {
           trackEvent("contact_click", { channel: "email", location: ctaLocation });
         } else if (href.startsWith(WHATSAPP_URL)) {
